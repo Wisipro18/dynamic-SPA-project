@@ -1,6 +1,3 @@
-import React, { useContext, useEffect } from "react";
-import { AppContext } from "../context/AppContext";
-
 const Home = () => {
 
   useEffect(() => {

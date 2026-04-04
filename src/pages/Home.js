@@ -2,7 +2,6 @@ import React, { useContext, useEffect } from "react";
 import { AppContext } from "../context/AppContext";
 
 const Home = () => {
-  const { userName, setUserName } = useContext(AppContext);
 
   useEffect(() => {
     document.title = "dynamic SPA"; // dynamic page title

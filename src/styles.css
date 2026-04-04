@@ -1,0 +1,175 @@
+/* Global page style */
+body, html, .light, .dark {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+.light {
+  background: linear-gradient(135deg, #f0f4ff, #d9e4ff);
+  color: #222;
+}
+
+.dark {
+  background: linear-gradient(135deg, #121212, #1e1e2f);
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  backdrop-filter: blur(5px);
+}
+
+/* Links */
+.nav-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+  transition: transform 0.2s;
+}
+
+.nav-links a:hover {
+  transform: scale(1.05);
+}
+
+/* Toggle button */
+.toggle-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.light .toggle-button {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark .toggle-button {
+  background-color: #fff;
+  color: #222;
+}
+
+.toggle-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Page */
+.page{
+  padding:40px;
+  max-width:1000px;
+  margin:auto;
+}
+
+.content-card{
+  padding:25px;
+  margin-top:25px;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.content-card:hover{
+  transform: translateY(-4px);
+  transition:0.25s ease;
+}
+
+.dark .content-card{
+  background: rgba(30,30,40,0.8);
+}
+
+.light .content-card{
+  background:#f2f2f2;
+  border:1px solid #e0e0e0;
+}
+
+/* Timeline */
+.timeline {
+  margin-top: 1rem;
+}
+.timeline-item {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+}
+
+/* Contact form */
+form input, form textarea {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #007bff;
+  color: white;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.confetti-text {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #ff4081;
+}
+
+.hero-text{
+  font-size:18px;
+  max-width:700px;
+  margin-bottom:20px;
+}
+
+.intro-box{
+  margin-top:20px;
+  padding:20px;
+  border-radius:10px;
+  background:rgba(255,255,255,0.1);
+}
+
+.skills-section{
+  margin-top:30px;
+}
+
+.skills-section ul{
+  list-style:none;
+  padding:0;
+}
+
+.skills-section li{
+  padding:8px 0;
+  font-size:16px;
+}
+
+.cta-box{
+  margin-top:30px;
+  padding:20px;
+  border-radius:12px;
+  background:rgba(0,0,0,0.1);
+}
+
+.about-intro{
+  font-size:17px;
+  max-width:700px;
+  margin-bottom:20px;
+}

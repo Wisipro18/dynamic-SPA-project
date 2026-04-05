@@ -14,8 +14,8 @@ const ConfettiLogo = () => {
       </h1>
       {show && (
         <Confetti
-          width={window.innerWidth}
-          height={window.innerHeight}
+          width={window.innerWidth || 300}
+          height={window.innerHeight || 200}
           recycle={false}
           numberOfPieces={200}
         />

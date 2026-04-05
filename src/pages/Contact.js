@@ -6,7 +6,7 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
-    document.title = "dyynamic SPA";
+    document.title = "dynamic SPA";
   }, []);
 
   const handleSubmit = (e) => {

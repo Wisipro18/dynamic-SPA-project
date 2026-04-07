@@ -1,47 +1,48 @@
-import React, { useContext, useEffect } from "react";
+import React, { useEffect, useContext } from 'react';
 import { AppContext } from "../context/AppContext";
 
 const Home = () => {
+  // Example usage of AppContext (optional)
+  const ctx = useContext(AppContext);
 
+  // Set page title dynamically
   useEffect(() => {
-    document.title = "Home | My SPA"; // dynamic page title
+    document.title = "Home | My SPA";
   }, []);
 
   return (
-  <div className="page">
+    <div className="page">
 
-    <div className="content-card">
-      <h1>Welcome to My Creative SPA 🚀</h1>
+      <div className="content-card">
+        <h1>
+  Welcome{ctx?.userName ? `, ${ctx.userName}` : ""} 🚀</h1>
+        <p>
+          Hi! I'm Wisdom, a passionate developer who enjoys building
+          interactive web applications using modern technologies like React.
+        </p>
+      </div>
 
-      <p>
-        Hi! I'm Wisdom, a passionate developer who enjoys building
-        interactive web applications using modern technologies like React.
-      </p>
+      <div className="content-card">
+        <h2>Who Am I?</h2>
+        <p>
+          I'm a tech enthusiast who enjoys creating modern web experiences,
+          experimenting with UI animations, and building interactive
+          applications that feel smooth and dynamic.
+        </p>
+      </div>
+
+      <div className="content-card">
+        <h2>Skills I'm Working With</h2>
+        <ul>
+          <li>⚛️ React & SPA Development</li>
+          <li>🎨 Responsive UI Design</li>
+          <li>🧠 JavaScript Logic</li>
+          <li>🌐 HTML & CSS</li>
+        </ul>
+      </div>
+
     </div>
-
-    <div className="content-card">
-      <h2>Who Am I?</h2>
-
-      <p>
-        I'm a tech enthusiast who enjoys creating modern web experiences,
-        experimenting with UI animations, and building interactive
-        applications that feel smooth and dynamic.
-      </p>
-    </div>
-
-    <div className="content-card">
-      <h2>Skills I'm Working With</h2>
-
-      <ul>
-        <li>⚛️ React & SPA Development</li>
-        <li>🎨 Responsive UI Design</li>
-        <li>🧠 JavaScript Logic</li>
-        <li>🌐 HTML & CSS</li>
-      </ul>
-    </div>
-
-  </div>
-);
+  );
 };
 
 export default Home;
